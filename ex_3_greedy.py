@@ -19,4 +19,3 @@ print(group)
 
 end_t = time.time()
 print("time : ", end_t - start_t)
-
