@@ -1,22 +1,22 @@
-# <문제3> 모험가 길드 (그리디)
+# <문제7> 문자열 재정렬 (구현)
 import time
 start_t = time.time()
 
-n = int(input())
-data = list(map(int, (input().split())))
-data.sort()
-
-group = 0
-count = 0
-
-for i in data:
-  count += 1
-  if count >= i:
-    group += 1
-    count = 0
-   
-print(group)
+s = list(input())
+s.sort()
+sum = 0
+result = []
+for i in s:
+  if ord(i) <= 57:
+    sum += int(i)
+  else:
+    result.append(i)
+result.append(str(sum))
+print(''.join(result))
 
 end_t = time.time()
 print("time : ", end_t - start_t)
 
+'''
+
+'''
